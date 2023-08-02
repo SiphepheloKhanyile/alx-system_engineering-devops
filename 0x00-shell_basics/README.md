@@ -1,2 +1,1 @@
-Script to print a current working directory
-
+Shell Basics, Learning Bash Scripting
