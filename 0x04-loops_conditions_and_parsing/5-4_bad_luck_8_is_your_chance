@@ -6,7 +6,7 @@ while [ $counter -le 10 ]
 do
 	if [ $counter = 4 ]
 	then
-		echo "Bad Luck"
+		echo "bad Luck"
 	elif [ $counter = 8 ]
 	then
 		echo "good luck"
