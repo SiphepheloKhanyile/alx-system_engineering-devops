@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # a Bash script that displays its own PID.
-#pgrep "$0"
+# i could have simply used echo $$
 name=$(echo "$0" | cut -d '/' -f 2)
 pgrep -o -f "$name"
