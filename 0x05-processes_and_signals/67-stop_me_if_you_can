@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# sript to stop "4_to_..." using pkill
+
+pkill -f 7-highlander
