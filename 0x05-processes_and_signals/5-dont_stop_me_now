@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# a script to kill "4-to_infinity_and_beyond"
+pname="4-to_infinity_and_beyond"
+p_id=$(pgrep -o -f $pname)
+kill "$p_id"
+
