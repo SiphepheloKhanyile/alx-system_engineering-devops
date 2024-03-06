@@ -32,5 +32,7 @@ backend servers
     server server2 54.237.54.173:80 check
 EOL
 
-sudo service haproxy start
+# enable haproxy to be started by init script
+
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 sudo service haproxy start
