@@ -7,12 +7,12 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    FILE_NAME = "USER_IC.csv"
 
     URL = "https://jsonplaceholder.typicode.com/"
 
     USER = requests.get(URL + f"users/{sys.argv[1]}", timeout=5).json()
     USERNAME = USER.get("name", None)
+    FILE_NAME = f"{USER.get('id', None)}.csv"
 
     TODOS = requests.get(URL + f"users/{sys.argv[1]}/todos", timeout=5).json()
 
