@@ -11,7 +11,7 @@ if __name__ == "__main__":
     URL = "https://jsonplaceholder.typicode.com/"
 
     USER = requests.get(URL + f"users/{sys.argv[1]}", timeout=5).json()
-    USERNAME = USER.get("name", None)
+    USERNAME = USER.get("username", None)
     FILE_NAME = f"{USER.get('id', None)}.csv"
 
     TODOS = requests.get(URL + f"users/{sys.argv[1]}/todos", timeout=5).json()
